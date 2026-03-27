@@ -12,6 +12,8 @@ original_url: "https://tulamasterman.substack.com/p/a-year-in-review-what-ive-be
 license: "CC BY-NC 4.0"
 ---
 
+# A Year in Review: What I've Been Up To (And What I've Learned)
+
 I recently sat down to update my personal website, the kind of activity it feels like you just worked on, but once you actually sit down, you quickly realize more time has passed than you thought. As I was looking at the site, two things stood out to me. First, it didn’t quite feel likemeanymore and second, the last time I published anything about AI was almost a year ago to the day.
 
 My first thought upon realizing this was “what have I been doing this year?” And my second thought was“actually, a lot!”Not all of it was what I expected or had planned, but most of it was really good for me and challenged me in ways I couldn’t have predicted.
