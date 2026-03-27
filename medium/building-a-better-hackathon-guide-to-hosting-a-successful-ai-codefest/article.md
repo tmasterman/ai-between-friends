@@ -3,7 +3,7 @@
 - **Author:** Tula Masterman
 - **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Medium
-- **Original link:** https://medium.com/neudesic-innovation/building-a-better-hackathon-guide-to-hosting-a-successful-ai-codefest
+- **Original link:** https://medium.com/neudesic-innovation/building-a-better-hackathon-guide-to-hosting-a-successful-ai-codefest-2530e5d12773
 - **Published:** 2024-04-29
 - **Imported to repo:** 2026-03-27
 

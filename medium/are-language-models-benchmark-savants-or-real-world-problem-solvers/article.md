@@ -3,7 +3,7 @@
 - **Author:** Tula Masterman
 - **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Towards Data Science
-- **Original link:** https://medium.com/data-science/are-language-models-benchmark-savants-or-real-world-problem-solvers-51f621e0f470
+- **Original link:** https://medium.com/data-science/are-language-models-benchmark-savants-or-real-world-problem-solvers-725a7e1524e1
 - **Published:** 2024-03-23
 - **Imported to repo:** 2026-03-27
 

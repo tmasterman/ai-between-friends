@@ -3,7 +3,7 @@
 - **Author:** Tula Masterman
 - **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Towards Data Science
-- **Original link:** https://medium.com/data-science/computer-use-and-ai-agents-a-new-paradigm-for-screen-interaction-6d2d0a0b8f0d
+- **Original link:** https://medium.com/data-science/computer-use-and-ai-agents-a-new-paradigm-for-screen-interaction-b2dcbea0df5b
 - **Published:** 2024-10-30
 - **Imported to repo:** 2026-03-27
 

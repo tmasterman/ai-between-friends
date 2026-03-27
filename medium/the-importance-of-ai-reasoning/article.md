@@ -3,7 +3,7 @@
 - **Author:** Tula Masterman
 - **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Medium
-- **Original link:** https://medium.com/neudesic-innovation/the-importance-of-ai-reasoning
+- **Original link:** https://medium.com/neudesic-innovation/the-importance-of-ai-reasoning-4ed7bcbed725
 - **Published:** 2024-02-28
 - **Imported to repo:** 2026-03-27
 
