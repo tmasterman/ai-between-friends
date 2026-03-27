@@ -1,8 +1,9 @@
 # Navigating the Latest GenAI Model Announcements — July 2024
 
 - **Author:** Tula Masterman
+- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Towards Data Science
-- **Original link:** https://towardsdatascience.com/navigating-the-latest-genai-model-announcements-july-2024
+- **Original link:** https://medium.com/data-science/navigating-the-latest-genai-model-announcements-july-2024-3f4f6d7d8407
 - **Published:** 2024-07-26
 - **Imported to repo:** 2026-03-27
 

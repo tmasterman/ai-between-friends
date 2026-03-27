@@ -1,8 +1,9 @@
 # Overcome Failing Document Ingestion & RAG Strategies with Agentic Knowledge Distillation
 
 - **Author:** Tula Masterman
+- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Towards Data Science
-- **Original link:** https://towardsdatascience.com/overcome-failing-document-ingestion-rag-strategies-with-agentic-knowledge-distillation/
+- **Original link:** https://medium.com/data-science/overcome-failing-document-ingestion-rag-strategies-with-agentic-knowledge-distillation-d2a3a7e7b9d0
 - **Published:** 2025-03-05
 - **Imported to repo:** 2026-03-27
 

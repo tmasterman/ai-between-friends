@@ -1,8 +1,9 @@
 # Introducing Layer Enhanced Classification (LEC)
 
 - **Author:** Tula Masterman
+- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Towards Data Science
-- **Original link:** https://towardsdatascience.com/introducing-layer-enhanced-classification-lec
+- **Original link:** https://medium.com/data-science/introducing-layer-enhanced-classification-lec-9d2a6d5c3d2f
 - **Published:** 2024-12-20
 - **Imported to repo:** 2026-03-27
 

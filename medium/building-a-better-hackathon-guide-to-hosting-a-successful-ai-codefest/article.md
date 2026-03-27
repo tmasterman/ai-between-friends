@@ -1,6 +1,7 @@
 # Building a Better Hackathon: Guide to Hosting a Successful AI Codefest
 
 - **Author:** Tula Masterman
+- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Medium
 - **Original link:** https://medium.com/neudesic-innovation/building-a-better-hackathon-guide-to-hosting-a-successful-ai-codefest
 - **Published:** 2024-04-29

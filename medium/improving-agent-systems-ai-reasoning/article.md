@@ -1,6 +1,7 @@
 # Improving Agent Systems & AI Reasoning
 
 - **Author:** Tula Masterman
+- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Towards Data Science
 - **Original link:** https://medium.com/data-science/improving-agent-systems-ai-reasoning-c2d91ecfdf77
 - **Published:** 2025-02-02

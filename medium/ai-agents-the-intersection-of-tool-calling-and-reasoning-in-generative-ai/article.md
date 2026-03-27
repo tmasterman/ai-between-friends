@@ -1,6 +1,7 @@
 # AI Agents: The Intersection of Tool Calling and Reasoning in Generative AI
 
 - **Author:** Tula Masterman
+- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Towards Data Science
 - **Original link:** https://medium.com/data-science/ai-agents-the-intersection-of-tool-calling-and-reasoning-in-generative-ai
 - **Published:** 2024-10-05

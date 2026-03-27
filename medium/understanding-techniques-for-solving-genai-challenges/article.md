@@ -1,8 +1,9 @@
 # Understanding Techniques for Solving GenAI Challenges
 
 - **Author:** Tula Masterman
+- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Towards Data Science
-- **Original link:** https://towardsdatascience.com/understanding-techniques-for-solving-genai-challenges
+- **Original link:** https://medium.com/data-science/understanding-techniques-for-solving-genai-challenges-83a7ad4650bd
 - **Published:** 2024-06-20
 - **Imported to repo:** 2026-03-27
 

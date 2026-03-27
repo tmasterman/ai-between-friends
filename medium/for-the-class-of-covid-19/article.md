@@ -1,6 +1,7 @@
 # For the Class of COVID-19
 
 - **Author:** Tula Masterman
+- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Medium
 - **Original link:** https://medium.com/@tula.masterman/for-the-class-of-covid-19
 - **Published:** 2020-03-19

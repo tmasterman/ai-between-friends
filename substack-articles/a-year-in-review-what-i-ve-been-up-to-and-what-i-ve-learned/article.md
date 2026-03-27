@@ -1,6 +1,7 @@
 # A Year in Review: What I've Been Up To (And What I've Learned)
 
 - **Author:** Tula Masterman
+- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Substack
 - **Original link:** https://tulamasterman.substack.com/p/a-year-in-review-what-ive-been-up
 - **Published:** 2026-03-09

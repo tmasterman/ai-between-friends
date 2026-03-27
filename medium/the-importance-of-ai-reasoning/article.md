@@ -1,6 +1,7 @@
 # The importance of AI reasoning
 
 - **Author:** Tula Masterman
+- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
 - **Original publication:** Medium
 - **Original link:** https://medium.com/neudesic-innovation/the-importance-of-ai-reasoning
 - **Published:** 2024-02-28
