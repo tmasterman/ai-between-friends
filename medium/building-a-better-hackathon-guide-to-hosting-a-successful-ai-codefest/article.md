@@ -13,8 +13,6 @@ original_url: "https://medium.com/neudesic-innovation/building-a-better-hackatho
 license: "CC BY-NC 4.0"
 ---
 
-## Article
-
 Learn how to run an extended hackathon that’s informational, fun, and impactful for your organization.
 
 People participating in an AI focused hackathon. Image by author and Dalle-3.

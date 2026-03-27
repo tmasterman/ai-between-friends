@@ -13,13 +13,11 @@ original_url: "https://medium.com/data-science/improving-agent-systems-ai-reason
 license: "CC BY-NC 4.0"
 ---
 
-## Article
-
 DeepSeek-R1, OpenAI o1 & o3, Test-Time Compute Scaling, Model Post-Training and the Transition to Reasoning Language Models (RLMs)
 
 Image by author and GPT-4o meant to represent DeepSeek and other competitive GenAI model providers
 
-Introduction
+## Introduction
 
 Over the past year generative AI adoption and AI Agent development have skyrocketed. Reports from LangChainshow that 51% of respondents are using AI Agents in production, while reports from Deloittepredict that in 2025 at least 25% of companies using Generative AI will launch AI agent pilots or proof of concepts.Despite the popularity and growth of AI Agent frameworks, anyone building these systems quickly runs into limitations of working with large language models (LLMs), with model reasoning ability often at the top of the list. To overcome reasoning limitations researchers and developers have explored a variety of different techniques ranging from different prompting methods like ReAct or Chain of Thought (CoT) to building multi-agent systems with separate agents dedicated to planning and evaluation, and now companies are releasing new models trained specifically to improve the model’s built-in reasoning process.
 
@@ -27,7 +25,7 @@ DeepSeek’s R1andOpenAI’s o1ando3announcements are shaking up the industry by
 
 In this article we’ll cover the key differences between train and test time compute scaling, post-training and how to train a RLM like DeepSeek’s R1, and the impact of RLMs on AI Agent development.
 
-Train-Time Compute vs Test-Time Compute
+## Train-Time Compute vs Test-Time Compute
 
 Overview
 
@@ -39,7 +37,7 @@ While post-training involves updating or creating a new model, test-time compute
 
 Image by author. Depicts a very simple representation of pre-training and post-training. Note that there can be significant variations in post-training, but essentially the base model is modified in some way to create an updated model better suited to the task.
 
-Train-Time Compute: Pre-Training & Post-Training
+## Train-Time Compute: Pre-Training & Post-Training
 
 Today, most LLMs & Foundation Models are pre-trained on a large amount of data from sources like the Common Crawl, which have a wide and varied representation of human-written text. This pre-training phase teaches the model to predict the next most likely word or token in a given context. Once pre-training is complete, most models undergo a form of Supervised Fine Tuning (SFT) to optimize them for instruction following or chat based use cases. For more information on these training processescheck out one of my previous articles.
 
@@ -49,7 +47,7 @@ However, despite their compelling performance on a myriad of problem types, gett
 
 Recently, models like DeepSeek-R1 have diverged from the typical pre-training and post-training patterns that optimize models for chat or instruction following. Instead DeepSeek-R1 used a multi-stage post-training pipeline to teach the model more specific behaviors like how to produce Chain-of-Thought sequences which in turn improve the model’s overall ability to “think” and reason. We’ll cover this in detail in the next section using the DeepSeek-R1 training process as an example.
 
-Test-Time Compute Scaling: Enabling “Thinking” at Inference
+## Test-Time Compute Scaling: Enabling “Thinking” at Inference
 
 What’s exciting about test-time compute scaling and post-training is that reasoning and iterative problem solving can be built into the models themselves or their inference pipelines. Instead of relying on the developer to guide the entire reasoning and iteration process, there’s opportunities to allow the model to explore multiple solution paths, reflect on it’s progress, rank the best solution paths, and generally refine the overall reasoning lifecycle before sending a response to the user.
 
@@ -67,7 +65,7 @@ Image by author inspired by HuggingFace blog on Test Time Compute Scaling
 
 Determining which search strategy is best is still an active area of research, but there are a lot ofgreat resources on HuggingFacewhich provide examples for how these search strategies can be implemented for your use case.
 
-Training a Reasoning Language Model (RLM)
+## Training a Reasoning Language Model (RLM)
 
 OpenAI’s o1 model announced in September 2024 was one of the first models designed to “think” before responding to users. Although it takes longer to get a response from o1 compared to models like GPT-4o, o1's responses are typically better for more advanced tasks since it generates chain of thought sequences that help it break down and solve problems.
 
@@ -83,7 +81,7 @@ DeepSeek-R1 Training Process:
 
 - Distilled DeepSeek-R1 Models: The DeepSeek team further demonstrated that DeepSeek-R1’s reasoning can be distilled into open-source smaller models using SFT alone without RL. They fine-tuned smaller models ranging from 1.5B-70B parameters based on both Qwen and Llama architectures resulting in a set of lighter, more efficient models with better reasoning abilities. This significantly improves accessibility for developers since many of these distilled models can run quickly on their device.
 
-Conclusion: The Impact of Improved Reasoning Models on AI Agents
+## Conclusion: The Impact of Improved Reasoning Models on AI Agents
 
 As reasoning-first models and test-time compute scaling techniques continue to advance, the system design, capabilities, and user-experience for interacting with AI agents will change significantly.
 

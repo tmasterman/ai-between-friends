@@ -13,9 +13,7 @@ original_url: "https://towardsdatascience.com/overcome-failing-document-ingestio
 license: "CC BY-NC 4.0"
 ---
 
-## Article
-
-Introduction
+## Introduction
 Many generative AI use cases still revolve around Retrieval Augmented Generation (RAG), yet consistently fall short of user expectations. Despite the growing body of research on RAG improvements and even adding Agents into the process, many solutions still fail to return exhaustive results, miss information that is critical but infrequently mentioned in the documents, require multiple search iterations, and generally struggle to reconcile key themes across multiple documents. To top it all off, many implementations still rely on cramming as much “relevant” information as possible into the model’s context window alongside detailed system and user prompts. Reconciling all this information often exceeds the model’s cognitive capacity and compromises response quality and consistency.
 
 This is where our Agentic Knowledge Distillation + Pyramid Search Approach comes into play. Instead of chasing the best chunking strategy, retrieval algorithm, or inference-time reasoning method, my team, Jim Brown, Mason Sawtell, Sandi Besen, and I, take an agentic approach to document ingestion.
@@ -28,7 +26,7 @@ While typical RAG solutions excel at factual retrieval where the answer is easil
 
 In this article, we’ll cover how our knowledge distillation process works, key benefits of this approach, examples, and an open discussion on the best way to evaluate these types of systems where, in many cases, there is no singular “right” answer.
 
-Building the pyramid: How Agentic Knowledge Distillation works
+## Building the pyramid: How Agentic Knowledge Distillation works
 Overview
 Our knowledge distillation process creates a multi-tiered pyramid of information from the raw source documents. Our approach is inspired by the pyramids used in deep learning computer vision-based tasks, which allow a model to analyze an image at multiple scales. We take the contents of the raw document, convert it to markdown, and distill the content into a list of atomic insights, related concepts, document abstracts, and general recollections/memories. During retrieval it’s possible to access any or all levels of the pyramid to respond to the user request.
 
@@ -43,14 +41,14 @@ We store the text and embeddings for each layer of the pyramid (pages and up) in
 
 This approach essentially creates the essence of a knowledge graph, but stores information in natural language, the way an LLM natively wants to interact with it, and is more efficient on token retrieval. We also let the LLM pick the terms used to categorize each level of the pyramid, this seemed to let the model decide for itself the best way to describe and differentiate between the information stored at each level. For example, the LLM preferred “insights” to “facts” as the label for the first level of distilled knowledge. Our goal in doing this was to better understand how an LLM thinks about the process by letting it decide how to store and group related information.
 
-Using the pyramid: How it works with RAG & Agents
+## Using the pyramid: How it works with RAG & Agents
 At inference time, both traditional RAG and agentic approaches benefit from the pre-processed, distilled information ingested in our knowledge pyramid. The pyramid structure allows for efficient retrieval in both the traditional RAG case, where only the top X related pieces of information are retrieved or in the Agentic case, where the Agent iteratively plans, retrieves, and evaluates information before returning a final response.
 
 The benefit of the pyramid approach is that information at any and all levels of the pyramid can be used during inference. For our implementation, we used PydanticAI to create a search agent that takes in the user request, generates search terms, explores ideas related to the request, and keeps track of information relevant to the request. Once the search agent determines there’s sufficient information to address the user request, the results are re-ranked and sent back to the LLM to generate a final reply. Our implementation allows a search agent to traverse the information in the pyramid as it gathers details about a concept/search term. This is similar to walking a knowledge graph, but in a way that’s more natural for the LLM since all the information in the pyramid is stored in natural language.
 
 Depending on the use case, the Agent could access information at all levels of the pyramid or only at specific levels (e.g. only retrieve information from the concepts). For our experiments, we did not retrieve raw page-level data since we wanted to focus on token efficiency and found the LLM-generated information for the insights, concepts, abstracts, and recollections was sufficient for completing our tasks. In theory, the Agent could also have access to the page data; this would provide additional opportunities for the agent to re-examine the original document text; however, it would also significantly increase the total tokens used.
 
-Results from the pyramid: Real-world examples
+## Results from the pyramid: Real-world examples
 To evaluate the effectiveness of our approach, we tested it against a variety of question categories, including typical fact-finding questions and complex cross-document research and analysis tasks.
 
 Fact-finding (spear fishing):
@@ -75,7 +73,7 @@ Similarly, this task was completed in 42.7 seconds and used 31,685 total tokens,
 
 These results for both fact-finding and complex analysis tasks demonstrate that the pyramid approach efficiently creates detailed reports with low latency using a minimal amount of tokens. The tokens used for the tasks carry dense meaning with little noise allowing for high-quality, thorough responses across tasks.
 
-Benefits of the pyramid: Why use it?
+## Benefits of the pyramid: Why use it?
 Overall, we found that our pyramid approach provided a significant boost in response quality and overall performance for high-value questions.
 
 Some of the key benefits we observed include:
@@ -88,7 +86,7 @@ Scalability: Many solutions struggle to perform as the size of the document data
 Efficient concept exploration: The pyramid enables the agent to explore related information similar to navigating a knowledge graph, but does not require ever generating or maintaining relationships in the graph. The agent can use natural language exclusively and keep track of important facts related to the concepts it’s exploring in a highly token-efficient and fluid way.
 Emergent dataset understanding: An unexpected benefit of this approach emerged during our testing. When asking questions like “what can you tell me about this dataset?” or “what types of questions can I ask?”, the system is able to respond and suggest productive search topics because it has a more robust understanding of the dataset context by accessing higher levels in the pyramid like the abstracts and recollections.
 
-Beyond the pyramid: Evaluation challenges & future directions
+## Beyond the pyramid: Evaluation challenges & future directions
 Challenges
 While the results we’ve observed when using the pyramid search approach have been nothing short of amazing, finding ways to establish meaningful metrics to evaluate the entire system both at ingestion time and during information retrieval is challenging. Traditional RAG and Agent evaluation frameworks often fail to address nuanced questions and analytical responses where many different responses are valid.
 
@@ -103,7 +101,7 @@ In the future, we believe that the pyramid approach can address some of these ch
 
 When applying this approach to organizational data, the pyramid process could also be used to identify and assess discrepancies across areas of the business. For example, uploading all of a company’s sales pitch decks could surface where certain products or services are being positioned inconsistently. It could also be used to compare insights extracted from various line of business data to help understand if and where teams have developed conflicting understandings of topics or different priorities. This application goes beyond pure information retrieval use cases and would allow the pyramid to serve as an organizational alignment tool that helps identify divergences in messaging, terminology, and overall communication.
 
-Conclusion: Key takeaways and why the pyramid approach matters
+## Conclusion: Key takeaways and why the pyramid approach matters
 The knowledge distillation pyramid approach is significant because it leverages the full power of the LLM at both ingestion and retrieval time. Our approach allows you to store dense information in fewer tokens which has the added benefit of reducing noise in the dataset at inference. Our approach also runs very quickly and is incredibly token efficient, we are able to generate responses within seconds, explore potentially hundreds of searches, and on average use <40K tokens for the entire search, retrieval, and response generation process (this includes all the search iterations!).
 
 We find that the LLM is much better at writing atomic insights as sentences and that these insights effectively distill information from both text-based and tabular data. This distilled information written in natural language is very easy for the LLM to understand and navigate at inference since it does not have to expend unnecessary energy reasoning about and breaking down document formatting or filtering through noise.

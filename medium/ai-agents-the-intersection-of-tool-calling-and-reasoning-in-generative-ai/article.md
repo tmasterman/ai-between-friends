@@ -13,8 +13,6 @@ original_url: "https://towardsdatascience.com/ai-agents-the-intersection-of-tool
 license: "CC BY-NC 4.0"
 ---
 
-## Article
-
 Unpacking problem solving and tool-driven decision making in AI
 
 Image by Author and GPT-4o depicting an AI agent at the intersection of reasoning and tool calling

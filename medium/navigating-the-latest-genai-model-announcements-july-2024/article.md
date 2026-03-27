@@ -13,8 +13,6 @@ original_url: "https://medium.com/data-science/navigating-the-latest-genai-model
 license: "CC BY-NC 4.0"
 ---
 
-## Article
-
 Navigating the Latest GenAI Announcements — July 2024
 
 A guide to new models GPT-4o mini, Llama 3.1, Mistral NeMo 12B and other GenAI trends

@@ -13,8 +13,6 @@ original_url: "https://medium.com/data-science/computer-use-and-ai-agents-a-new-
 license: "CC BY-NC 4.0"
 ---
 
-## Article
-
 Exploring the future of multimodal AI Agents and the Impact of Screen Interaction
 
 Image created by author using GPT4o

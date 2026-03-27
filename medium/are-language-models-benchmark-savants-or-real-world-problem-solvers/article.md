@@ -13,8 +13,6 @@ original_url: "https://medium.com/data-science/are-language-models-benchmark-sav
 license: "CC BY-NC 4.0"
 ---
 
-## Article
-
 Evaluating the evolution and application of language models on real world tasks
 
 AI students taking an exam in a classroom. Image created by author and DALL-E 3.

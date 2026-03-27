@@ -13,8 +13,6 @@ original_url: "https://medium.com/data-science/understanding-techniques-for-solv
 license: "CC BY-NC 4.0"
 ---
 
-## Article
-
 Dive into model pre-training, fine-tuning, RAG, prompt engineering, and more!
 
 Source: Author & GPT4o. Image is designed to show a language model learning and developing its brain!

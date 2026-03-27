@@ -13,15 +13,13 @@ original_url: "https://medium.com/data-science/introducing-layer-enhanced-classi
 license: "CC BY-NC 4.0"
 ---
 
-## Article
-
 A novel approach for lightweight safety classification using pruned language models
 
 Leveraging the hidden state from an intermediate Transformer layer for efficient and robust content safety and prompt injection classification
 
 Image by author and GPT-4o meant to represent the robust language understanding provided by Large Language Models.
 
-Introduction
+## Introduction
 
 As the adoption of Language Models (LMs) grows, it’s more and more important to detect inappropriate content in both the user’s input and the generated outputs of the language model. With each new model release from any major model provider, one of the first things people try to do is find ways to “jailbreak” or otherwise manipulate the model to respond in ways it shouldn’t. A quick search on Google or X reveals many examples of how people have found ways around model alignment tuning to get models to respond to inappropriate requests. Furthermore, many companies have released Generative AI based chatbots publicly for tasks like customer service, which often end up suffering from prompt injection attacks and responding to tasks both inappropriate and far beyond their intended use. Detecting and classifying these instances is extremely important for businesses so that they don’t end up with a system that can be easily manipulated by their users, especially if they deploy their chat systems publicly.
 
@@ -31,7 +29,7 @@ All of the models trained using our approach, LEC, outperform special-purpose mo
 
 This is the first of several articles I plan to share on this topic. In this article I will summarize the goals, approach, key results, and implications of our research. In a future article, I plan to share how we applied our approach to IBM’s Granite-8B model and an open-source model without any guardrails, allowing both models to detect content safety & prompt injection violations and generate output tokens all in one pass through the model. For further details on our research feel free tocheck out the full paper, read my colleagueSandi Besen’s article, or reach out with questions.
 
-Goals & Approach
+## Goals & Approach
 
 Overview:Our research focuses on understanding how well the hidden states of intermediate transformer layers perform when used as the input features for classification tasks. We wanted to understand if small general-purpose models and special-purpose models for content safety and prompt injection classification tasks would perform better on these tasks if we could identify the optimal layer to use for the task instead of using the entire model / the last layer for classification. We also wanted to understand how small of a model, in terms of the total number of parameters, we could use as a starting point for this task. Other research has shown that different layers of the model focus on different characteristics of any given prompt input, our work finds that the intermediate layers tend to best capture the features that are most important for these classification tasks.
 
@@ -52,7 +50,7 @@ Important Implementation Details:For both Qwen 2.5 Instruct models and task-spec
 
 Image by author and team demonstrating the LEC training process at a high level. Training examples are independently passed through a model and the hidden state at each transformer layer is captured. These hidden states are then used to train classifiers. Each classifier is trained with a varying number of examples. The results allow us to determine which layers produce the most task-relevant features and how many examples are needed to achieve the best performance.
 
-Key Results
+## Key Results
 
 In this section I’ll cover the important results across both tasks and for each task, content safety classification and prompt injection classification, individually.
 
@@ -94,7 +92,7 @@ Image by author and team demonstrating LEC performance at select layers on the p
 
 - The intermediate layers achieve the highest weighted F1 scores for both the DeBERTa model and across Qwen 2.5 Instruct model sizes.
 
-Conclusion
+## Conclusion
 
 In our research we focused on two responsible AI related classification tasks but expect this approach to work for other classification tasks provided that the important features for the task can be detected by the intermediate layers of the model.
 

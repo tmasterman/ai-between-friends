@@ -13,8 +13,6 @@ original_url: "https://medium.com/neudesic-innovation/the-importance-of-ai-reaso
 license: "CC BY-NC 4.0"
 ---
 
-## Article
-
 Creating more effective AI systems through prompting, training/fine-tuning, and agent frameworks.
 
 Let’s take the question, “what occupation do the grandchildren of the Beatles hold?”. Although a seemingly simple question, there are lots of components we’d need to determine to answer correctly. For example:
