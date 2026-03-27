@@ -19,7 +19,9 @@ Learn how to run an extended hackathon that’s informational, fun, and impactfu
 
 People participating in an AI focused hackathon. Image by author and Dalle-3.
 
-### Overview
+#
+
+## Overview
 
 The pace of innovation in AI is astounding. Keeping up with all these changes while ensuring employees have hands on experience applying emerging technology can be challenging. This is where the power of a well-organized hackathon shines. At Neudesic, we’ve been refining the art of hosting engaging and impactful AI hackathons, and thought we’d share our framework to help you do the same!
 

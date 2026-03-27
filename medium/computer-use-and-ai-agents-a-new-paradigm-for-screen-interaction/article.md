@@ -77,7 +77,7 @@ One of the biggest benefits of agentic systems is their potential to overcome th
 
 Alternatively, these capabilities might becombined within one robust agent. In this setup, the agent could have multiple internal planning modules— one focused on planning the screen interactions and another focused on managing the overall task. The best approach to structuring agents remains to be seen, but the goal remains the same: to create agents that perform reliably overtime, across multiple modalities, and adapt seamlessly to the user’s needs.
 
-References:
+## References
 
 - Developing Computer Use(Anthropic)
 

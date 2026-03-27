@@ -21,17 +21,21 @@ Image by author and GPT-4o meant to represent DeepSeek and other competitive Gen
 
 ## Introduction
 
-Over the past year generative AI adoption and AI Agent development have skyrocketed.Reports from LangChainshow that 51% of respondents are using AI Agents in production, whilereports from Deloittepredict that in 2025 at least 25% of companies using Generative AI will launch AI agent pilots or proof of concepts.Despite the popularity and growth of AI Agent frameworks, anyone building these systems quickly runs into limitations of working with large language models (LLMs), with model reasoning ability often at the top of the list. To overcome reasoning limitations researchers and developers have explored a variety of different techniques ranging from different prompting methods like ReAct or Chain of Thought (CoT) to building multi-agent systems with separate agents dedicated to planning and evaluation, andnow companies are releasing new models trained specifically to improve the model’s built-in reasoning process.
+Over the past year generative AI adoption and AI agent development have skyrocketed. Reports from LangChainshow that 51% of respondents are using AI Agents in production, while reports from Deloittepredict that in 2025 at least 25% of companies using Generative AI will launch AI agent pilots or proof of concepts.Despite the popularity and growth of AI Agent frameworks, anyone building these systems quickly runs into limitations of working with large language models (LLMs), with model reasoning ability often at the top of the list. To overcome reasoning limitations researchers and developers have explored a variety of different techniques ranging from different prompting methods like ReAct or Chain of Thought (CoT) to building multi-agent systems with separate agents dedicated to planning and evaluation, and now companies are releasing new models trained specifically to improve the model’s built-in reasoning process.
 
-DeepSeek’s R1andOpenAI’s o1ando3announcements are shaking up the industry by providing more robust reasoning capabilities compared to traditional LLMs. These models are trained to “think” before answering and have a self-contained reasoning process allowing them to break down tasks into simpler steps, work iteratively on the steps, recognize and correct mistakes before returning a final answer. This differs from earlier models like GPT-4o which required users to build their own reasoning logic by prompting the model to think step-by-step and creating loops for the model to iteratively plan, work, and evaluate its progress on a task. One of the key differences in training Reasoning Language Models (RLMs) like o1, o3, and R1 lies in the focus on post-training and test-time compute scaling.
+DeepSeek’s R1 and OpenAI’s o1 and o3 announcements are shaking up the industry by providing more robust reasoning capabilities compared to traditional LLMs. These models are trained to “think” before answering and have a self-contained reasoning process allowing them to break down tasks into simpler steps, work iteratively on the steps, recognize and correct mistakes before returning a final answer. This differs from earlier models like GPT-4o which required users to build their own reasoning logic by prompting the model to think step-by-step and creating loops for the model to iteratively plan, work, and evaluate its progress on a task. One of the key differences in training Reasoning Language Models (RLMs) like o1, o3, and R1 lies in the focus on post-training and test-time compute scaling.
 
-In this article we’ll cover the key differences between train and test time compute scaling, post-training and how to train a RLM like DeepSeek’s R1, and the impact of RLMs on AI Agent development.
+In this article we’ll cover the key differences between train and test time compute scaling, post-training and how to train a RLM like DeepSeek’s R1, and the impact of RLMs on AI agent development.
 
 ## Train-Time Compute vs Test-Time Compute
 
-### Overview
+#
 
-Compute-scaling relates to providing more resources, such as processing power and memory, for training and running AI models. In a nutshell,train-time compute scalingapplies to bothpre-trainingwhere a model learns general patterns andpost-trainingwhere a base-model undergoes additional training like Reinforcement Learning (RL) or Supervised Fine-Tuning (SFT) to learn additional more specific behaviors. In contrast,test-time compute scaling applies at inference time, when making a prediction, and provides more computational power for the model to “think” by exploring multiple potential solutions before generating a final answer.
+## #
+
+## Overview
+
+Compute-scaling relates to providing more resources, such as processing power and memory, for training and running AI models. In a nutshell, train-time compute scalingapplies to both pre-training where a model learns general patterns and post-training where a base-model undergoes additional training like Reinforcement Learning (RL) or Supervised Fine-Tuning (SFT) to learn additional more specific behaviors. In contrast,test-time compute scaling applies at inference time, when making a prediction, and provides more computational power for the model to “think” by exploring multiple potential solutions before generating a final answer.
 
 It’s important to understand that both test-time compute scaling and post-training can be used to help a model “think” before producing a final response but that these approaches are implemented in different ways.
 
@@ -75,7 +79,9 @@ Working with o1 and o3 requires a different style of prompt engineering compared
 
 Given the closed-source nature of OpenAI’s o1 and o3 models it’s impossible to know exactly how the models were developed; this is a big reason why DeepSeek-R1 attracted so much attention.DeepSeek-R1 is the first open-source model to demonstrate comparable behavior and performance to OpenAI’s o1.This is amazing for the open-source community because it means developers can modify R1 to their needs and, compute power permitting, can replicate R1’s training methodology.
 
-DeepSeek-R1 Training Process:
+#
+
+## DeepSeek-R1 Training Process
 
 - DeepSeek-R1-Zero: First, DeepSeek performed Reinforcement Learning (RL) (post-training) on their base model DeepSeek-V3. This resulted inDeepSeek-R1-Zero, a model that learned how to reason, create chain-of-thought-sequences, and demonstrates capabilities like self-verification and reflection. The fact that a model could learn all these behaviors from RL alone is significant for the AI industry as a whole. However, despite DeepSeek-R1-Zero’s impressive ability to learn,themodel had significant issues like language mixing and generally poor readability. This led the team to explore other paths to stabilize model performance and create a more production-ready model.
 
@@ -83,7 +89,11 @@ DeepSeek-R1 Training Process:
 
 - Distilled DeepSeek-R1 Models: The DeepSeek team further demonstrated that DeepSeek-R1’s reasoning can be distilled into open-source smaller models using SFT alone without RL. They fine-tuned smaller models ranging from 1.5B-70B parameters based on both Qwen and Llama architectures resulting in a set of lighter, more efficient models with better reasoning abilities. This significantly improves accessibility for developers since many of these distilled models can run quickly on their device.
 
-## ## Conclusion: The Impact of Improved Reasoning Models on AI Agents
+## 
+
+## 
+
+## Conclusion: The Impact of Improved Reasoning Models on AI Agents
 
 As reasoning-first models and test-time compute scaling techniques continue to advance, the system design, capabilities, and user-experience for interacting with AI agents will change significantly.
 
@@ -99,7 +109,7 @@ Note: The opinions expressed in this article are solely my own and do not necess
 
 Interested in discussing further or collaborating? Reach out on LinkedIn!
 
-References:
+## References
 
 - HuggingFace Blog on Scaling Test Time Compute
 

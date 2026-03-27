@@ -28,11 +28,19 @@ While typical RAG solutions excel at factual retrieval where the answer is easil
 In this article, we’ll cover how our knowledge distillation process works, key benefits of this approach, examples, and an open discussion on the best way to evaluate these types of systems where, in many cases, there is no singular “right” answer.
 
 ## Building the pyramid: How Agentic Knowledge Distillation works
-### Overview
+#
+
+## #
+
+## Overview
 
 Our knowledge distillation process creates a multi-tiered pyramid of information from the raw source documents. Our approach is inspired by the pyramids used in deep learning computer vision-based tasks, which allow a model to analyze an image at multiple scales. We take the contents of the raw document, convert it to markdown, and distill the content into a list of atomic insights, related concepts, document abstracts, and general recollections/memories. During retrieval it’s possible to access any or all levels of the pyramid to respond to the user request.
 
-### How to distill documents and build the pyramid
+#
+
+## #
+
+## How to distill documents and build the pyramid
 Convert documents to Markdown: Convert all raw source documents to Markdown. We’ve found models process markdown best for this task compared to other formats like JSON and it is more token efficient. We used Azure Document Intelligence to generate the markdown for each page of the document, but there are many other open-source libraries like MarkItDown which do the same thing. Our dataset included 331 documents and 16,601 pages.
 Extract atomic insights from each page: We process documents using a two-page sliding window, which allows each page to be analyzed twice. This gives the agent the opportunity to correct any potential mistakes when processing the page initially. We instruct the model to create a numbered list of insights that grows as it processes the pages in the document. The agent can overwrite insights from the previous page if they were incorrect since it sees each page twice. We instruct the model to extract insights in simple sentences following the subject-verb-object (SVO) format and to write sentences as if English is the second language of the user. This significantly improves performance by encouraging clarity and precision. Rolling over each page multiple times and using the SVO format also solves the disambiguation problem, which is a huge challenge for knowledge graphs. The insight generation step is also particularly helpful for extracting information from tables since the model captures the facts from the table in clear, succinct sentences. Our dataset produced 216,931 total insights, about 13 insights per page and 655 insights per document.
 Distilling concepts from insights: From the detailed list of insights, we identify higher-level concepts that connect related information about the document. This step significantly reduces noise and redundant information in the document while preserving essential information and themes. Our dataset produced 14,824 total concepts, about 1 concept per page and 45 concepts per document.
@@ -53,7 +61,9 @@ Depending on the use case, the Agent could access information at all levels of t
 ## Results from the pyramid: Real-world examples
 To evaluate the effectiveness of our approach, we tested it against a variety of question categories, including typical fact-finding questions and complex cross-document research and analysis tasks.
 
-Fact-finding (spear fishing):
+#
+
+## Fact-finding (spear fishing)
 These tasks require identifying specific information or facts that are buried in a document. These are the types of questions typical RAG solutions target but often require many searches and consume lots of tokens to answer correctly.
 
 Example task: “What was IBM’s total revenue in the latest financial reporting?”
@@ -62,7 +72,9 @@ Example response using pyramid approach: “IBM’s total revenue for the third 
 
 This result is correct (human-validated) and was generated using only 9,994 total tokens, with 1,240 tokens in the generated final response.
 
-Complex research and analysis:
+#
+
+## Complex research and analysis
 These tasks involve researching and understanding multiple concepts to gain a broader understanding of the documents and make inferences and informed assumptions based on the gathered facts.
 
 Example task: “Analyze the investments Microsoft and NVIDIA are making in AI and how they are positioning themselves in the market. The report should be clearly formatted.”
@@ -103,7 +115,9 @@ In the future, we believe that the pyramid approach can address some of these ch
 
 When applying this approach to organizational data, the pyramid process could also be used to identify and assess discrepancies across areas of the business. For example, uploading all of a company’s sales pitch decks could surface where certain products or services are being positioned inconsistently. It could also be used to compare insights extracted from various line of business data to help understand if and where teams have developed conflicting understandings of topics or different priorities. This application goes beyond pure information retrieval use cases and would allow the pyramid to serve as an organizational alignment tool that helps identify divergences in messaging, terminology, and overall communication.
 
-## ## Conclusion: Key takeaways and why the pyramid approach matters
+## 
+
+## Conclusion: Key takeaways and why the pyramid approach matters
 The knowledge distillation pyramid approach is significant because it leverages the full power of the LLM at both ingestion and retrieval time. Our approach allows you to store dense information in fewer tokens which has the added benefit of reducing noise in the dataset at inference. Our approach also runs very quickly and is incredibly token efficient, we are able to generate responses within seconds, explore potentially hundreds of searches, and on average use <40K tokens for the entire search, retrieval, and response generation process (this includes all the search iterations!).
 
 We find that the LLM is much better at writing atomic insights as sentences and that these insights effectively distill information from both text-based and tabular data. This distilled information written in natural language is very easy for the LLM to understand and navigate at inference since it does not have to expend unnecessary energy reasoning about and breaking down document formatting or filtering through noise.

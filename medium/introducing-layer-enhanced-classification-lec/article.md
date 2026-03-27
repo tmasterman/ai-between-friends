@@ -108,7 +108,9 @@ Note: The opinions expressed both in this article and the research paper are sol
 
 Interested in discussing further or collaborating? Reach out on LinkedIn!
 
-Additional References:
+Additional 
+
+## References
 
 - Lightweight Safety Classification Using Pruned Language Models(see full references section in our paper on ArXiv)
 
