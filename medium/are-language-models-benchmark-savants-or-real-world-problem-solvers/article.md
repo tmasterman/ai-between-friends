@@ -1,25 +1,25 @@
-# Are Language Models Benchmark Savants or Real-World Problem Solvers?
-
-- **Author:** Tula Masterman
-- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
-- **Original publication:** Towards Data Science
-- **Original link:** https://medium.com/data-science/are-language-models-benchmark-savants-or-real-world-problem-solvers-725a7e1524e1
-- **Published:** 2024-03-23
-- **Imported to repo:** 2026-03-27
-
-- **Subtitle:** Evaluating the evolution and application of language models on real world tasks
-
-## Summary
-
-Argues that language model evaluation needs to move beyond static benchmarks toward dynamic, multimodal, real-world assessments.
+---
+title: "Are Language Models Benchmark Savants or Real-World Problem Solvers?"
+subtitle: "Evaluating the evolution and application of language models on real world tasks"
+authors:
+  - name: "Tula Masterman"
+    publication: "Tula Masterman"
+    links:
+      substack: "https://substack.com/@tulamasterman"
+      linkedin: "https://www.linkedin.com/in/tula-masterman/"
+      website: "https://tulamasterman.com/"
+published: 2024-03-23
+original_url: "https://medium.com/data-science/are-language-models-benchmark-savants-or-real-world-problem-solvers-725a7e1524e1"
+license: "CC BY-NC 4.0"
+---
 
 ## Article
 
-Evaluating the evolution and application of language models on real world tasks
+Evaluating the evolution and application of language models on real world tasks
 
-AI students taking an exam in a classroom. Image created by author and DALL-E 3.
+AI students taking an exam in a classroom. Image created by author and DALL-E 3.
 
-In the realm of education, the best exams are those that challenge students to apply what they’ve learned in new and unpredictable ways, moving beyond memorizing facts to demonstrate true understanding. Our evaluations of language models should follow the same pattern. As we see new models flood the AI space everyday whether from giants like OpenAI and Anthropic, or from smaller research teams and universities, its critical that our model evaluations dive deeper than performance on standard benchmarks. Emerging research suggests that the benchmarks we’ve relied on to gauge model capability are not as reliable as we once thought. In order for us to champion new models appropriately, our benchmarks must evolve to be as dynamic and complex as the real-world challenges we’re asking these models and emerging AI agent architectures to solve.
+In the realm of education, the best exams are those that challenge students to apply what they’ve learned in new and unpredictable ways, moving beyond memorizing facts to demonstrate true understanding. Our evaluations of language models should follow the same pattern. As we see new models flood the AI space everyday whether from giants like OpenAI and Anthropic, or from smaller research teams and universities, its critical that our model evaluations dive deeper than performance on standard benchmarks. Emerging research suggests that the benchmarks we’ve relied on to gauge model capability are not as reliable as we once thought. In order for us to champion new models appropriately, our benchmarks must evolve to be as dynamic and complex as the real-world challenges we’re asking these models and emerging AI agent architectures to solve.
 
 In this article we will explore the complexity of language model evaluation by answering the following questions:
 
@@ -27,15 +27,15 @@ In this article we will explore the complexity of language model evaluation by a
 
 - How reliable are language models that excel on benchmarks?
 
-- Can language models and AI agents translate knowledge into action?
+- Can language models and AI agents translate knowledge into action?
 
-- Why should language models (or foundation models) master more than text?
+- Why should language models (or foundation models) master more than text?
 
 So, how are language models evaluated today?
 
-Today most models either Large Language Models (LLMs) or Small Language Models (SLMs) are evaluated on a common set of benchmarks including the Massive Multitask Language Understanding (MMLU), Grade School Math (GSM8K), and Big-Bench Hard (BBH) datasets amongst others.
+Today most models either Large Language Models (LLMs) or Small Language Models (SLMs) are evaluated on a common set of benchmarks including the Massive Multitask Language Understanding (MMLU), Grade School Math (GSM8K), and Big-Bench Hard (BBH) datasets amongst others.
 
-To provide a deeper understanding of the types of tasks each benchmark evaluates, here are some sample questions from each dataset:
+To provide a deeper understanding of the types of tasks each benchmark evaluates, here are some sample questions from each dataset:
 
 - MMLU: Designed to measure information the model learned during pre-training across a variety of STEM and humanities based subjects and difficulty levels from elementary to advanced professional understanding using multiple choice questions.
 Example college medicine question in MMLU: “In a genetic test of a newborn, a rare genetic disorder is found that has X-linked recessive transmission. Which of the following statements is likely true regarding the pedigree of the disorder? A. All descendants on the maternal side will have the disorder B. Females will be approximately twice as affected as males in their family. C. All daughters of an affected male will be affected. D. There will be equal distribution of males and females affected.” (Correct answer is C)[2]
@@ -56,23 +56,23 @@ Research from Microsoft, the Institute of Automation CAS, and the University of 
 
 Source:DyVal2, Model Performance on Vanilla Benchmarks Compared to Probing Benchmark
 
-Similarly, research from the Department of Computer Science at the University of Arizona indicates that there is asignificant amount of data contamination in language models[6]. Meaning that the information in the benchmarks is becoming part of the models training data, effectively making the benchmark scores irrelevant since the models are being tested on information they are trained on.
+Similarly, research from the Department of Computer Science at the University of Arizona indicates that there is asignificant amount of data contamination in language models[6]. Meaning that the information in the benchmarks is becoming part of the models training data, effectively making the benchmark scores irrelevant since the models are being tested on information they are trained on.
 
 Additional research from Fudan University, Tongji University, and Alibaba highlights the need for self-evolving dynamic evaluations for AI agents to combat the issues of data contamination and benchmark memorization [7]. These dynamic benchmarks will help prevent models from memorizing or learning information during pre-training that they’d later be tested on. Although a recurring influx of new benchmarks may create challenges when comparing an older model to a newer model, ideally these benchmarks will mitigate issues of data contamination and make it easier to gauge how well a model understands topics from training.
 
-When evaluating model capability for a particular problem, we need to grasp both how well the model understands information learned during pretraining and how well it can generalize to novel tasks or concepts beyond it’s training data.
+When evaluating model capability for a particular problem, we need to grasp both how well the model understands information learned during pretraining and how well it can generalize to novel tasks or concepts beyond it’s training data.
 
-Can language models and AI agents translate knowledge into action?
+Can language models and AI agents translate knowledge into action?
 
 As we look to use models as AI agents to perform actions on our behalf, whether that’s booking a vacation, writing a report, or researching new topics for us, we’ll need additional benchmarks or evaluation mechanisms that can assess the reliability and accuracy of these agents. Most businesses looking to harness the power of foundation models require giving the model access to a variety of tools integrated with their unique data sources and require the model to reason and plan when and how to use the tools available to them effectively. These types of tasks are not represented in many traditional LLM benchmarks.
 
 Source:AgentVerse, results from team of agents compared to single agent on software development task involving tool calling and code execution
 
-To address this gap, many research teams are creating their own benchmarks and frameworks that evaluate agent performance on tasks involving tool use and knowledge outside of the model’s training data. For example, the authors of AgentVerse evaluated how well teams of agents could perform real world tasks involving event planning, software development, and consulting. The researchers created their own set of 10 test tasks which were manually evaluated to determine if the agents performed the right set of actions, used the proper tools, and got to an accurate result. They found that teams of agents who operated in a cycle with defined stages for agent recruitment, task planning, independent task execution, and subsequent evaluation lead to superior outcomes compared to independent agents [8].
+To address this gap, many research teams are creating their own benchmarks and frameworks that evaluate agent performance on tasks involving tool use and knowledge outside of the model’s training data. For example, the authors of AgentVerse evaluated how well teams of agents could perform real world tasks involving event planning, software development, and consulting. The researchers created their own set of 10 test tasks which were manually evaluated to determine if the agents performed the right set of actions, used the proper tools, and got to an accurate result. They found that teams of agents who operated in a cycle with defined stages for agent recruitment, task planning, independent task execution, and subsequent evaluation lead to superior outcomes compared to independent agents [8].
 
-Beyond single modalities and into the real world. Why should language models (or foundation models) master more than text?
+Beyond single modalities and into the real world. Why should language models (or foundation models) master more than text?
 
-In my opinion the emerging agent architectures and benchmarks are a great step towards understanding how well language models will perform on business oriented problems, but one limitation is that most are still text focused. As we consider the world and the dynamic nature of most jobs, we will need agent systems and models that evaluate both performance on text based tasks as well as visual and auditory tasks together. The AlgoPuzzleVQA dataset is one example of evaluating models on their ability to both reason, read, and visually interpret mathematical and algorithmic puzzles [9].
+In my opinion the emerging agent architectures and benchmarks are a great step towards understanding how well language models will perform on business oriented problems, but one limitation is that most are still text focused. As we consider the world and the dynamic nature of most jobs, we will need agent systems and models that evaluate both performance on text based tasks as well as visual and auditory tasks together. The AlgoPuzzleVQA dataset is one example of evaluating models on their ability to both reason, read, and visually interpret mathematical and algorithmic puzzles [9].
 
 Source:Are Language Models Puzzle Prodigies?Example questions from AlgoPuzzleVQA dataset
 

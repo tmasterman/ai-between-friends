@@ -1,21 +1,22 @@
-# A Year in Review: What I've Been Up To (And What I've Learned)
-
-- **Author:** Tula Masterman
-- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
-- **Original publication:** Substack
-- **Original link:** https://tulamasterman.substack.com/p/a-year-in-review-what-ive-been-up
-- **Published:** 2026-03-09
-- **Imported to repo:** 2026-03-27
-
-## Summary
-
-Reflections on growth, learning, communication, change, and returning to writing after a year of professional and personal transition.
+---
+title: "A Year in Review: What I've Been Up To (And What I've Learned)"
+authors:
+  - name: "Tula Masterman"
+    publication: "Tula Masterman"
+    links:
+      substack: "https://substack.com/@tulamasterman"
+      linkedin: "https://www.linkedin.com/in/tula-masterman/"
+      website: "https://tulamasterman.com/"
+published: 2026-03-09
+original_url: "https://tulamasterman.substack.com/p/a-year-in-review-what-ive-been-up"
+license: "CC BY-NC 4.0"
+---
 
 ## Article
 
 I recently sat down to update my personal website, the kind of activity it feels like you just worked on, but once you actually sit down, you quickly realize more time has passed than you thought. As I was looking at the site, two things stood out to me. First, it didn’t quite feel likemeanymore and second, the last time I published anything about AI was almost a year ago to the day.
 
-My first thought upon realizing this was “what have I been doing this year?”And my second thought was“actually, a lot!”Not all of it was what I expected or had planned, but most of it was really good for me and challenged me in ways I couldn’t have predicted.
+My first thought upon realizing this was “what have I been doing this year?” And my second thought was“actually, a lot!”Not all of it was what I expected or had planned, but most of it was really good for me and challenged me in ways I couldn’t have predicted.
 
 So, I wanted to sit down and take a moment to reflect and share the main lessons I’ve been learning (and am frankly still working on) this year.
 

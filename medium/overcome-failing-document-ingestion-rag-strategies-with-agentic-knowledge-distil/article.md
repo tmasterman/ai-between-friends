@@ -1,17 +1,17 @@
-# Overcome Failing Document Ingestion & RAG Strategies with Agentic Knowledge Distillation
-
-- **Author:** Tula Masterman
-- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
-- **Original publication:** Towards Data Science
-- **Original link:** https://towardsdatascience.com/overcome-failing-document-ingestion-rag-strategies-with-agentic-knowledge-distillation/
-- **Published:** 2025-03-05
-- **Imported to repo:** 2026-03-27
-
-- **Subtitle:** Introducing the pyramid search approach
-
-## Summary
-
-Introduces an agentic knowledge distillation and pyramid search approach for improving document ingestion, retrieval, and complex cross-document reasoning in RAG systems.
+---
+title: "Overcome Failing Document Ingestion & RAG Strategies with Agentic Knowledge Distillation"
+subtitle: "Introducing the pyramid search approach"
+authors:
+  - name: "Tula Masterman"
+    publication: "Tula Masterman"
+    links:
+      substack: "https://substack.com/@tulamasterman"
+      linkedin: "https://www.linkedin.com/in/tula-masterman/"
+      website: "https://tulamasterman.com/"
+published: 2025-03-05
+original_url: "https://towardsdatascience.com/overcome-failing-document-ingestion-rag-strategies-with-agentic-knowledge-distillation/"
+license: "CC BY-NC 4.0"
+---
 
 ## Article
 
