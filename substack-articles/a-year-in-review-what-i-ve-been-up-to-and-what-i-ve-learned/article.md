@@ -1,25 +1,24 @@
-# A Year in Review: What I've Been Up To (And What I've Learned)
-
-- **Author:** Tula Masterman
-- **Find me:** Find me on [LinkedIn](https://www.linkedin.com/in/tula-masterman/) or [Substack](https://substack.com/@tulamasterman).
-- **Original publication:** Substack
-- **Original link:** https://tulamasterman.substack.com/p/a-year-in-review-what-ive-been-up
-- **Published:** 2026-03-09
-- **Imported to repo:** 2026-03-27
-
-## Summary
-
-Reflections on growth, learning, communication, change, and returning to writing after a year of professional and personal transition.
-
-## Article
+---
+title: "A Year in Review: What I've Been Up To (And What I've Learned)"
+authors:
+  - name: "Tula Masterman"
+    publication: "Tula Masterman"
+    links:
+      substack: "https://substack.com/@tulamasterman"
+      linkedin: "https://www.linkedin.com/in/tula-masterman/"
+      website: "https://tulamasterman.com/"
+published: 2026-03-09
+original_url: "https://tulamasterman.substack.com/p/a-year-in-review-what-ive-been-up"
+license: "CC BY-NC 4.0"
+---
 
 I recently sat down to update my personal website, the kind of activity it feels like you just worked on, but once you actually sit down, you quickly realize more time has passed than you thought. As I was looking at the site, two things stood out to me. First, it didn’t quite feel likemeanymore and second, the last time I published anything about AI was almost a year ago to the day.
 
-My first thought upon realizing this was “what have I been doing this year?”And my second thought was“actually, a lot!”Not all of it was what I expected or had planned, but most of it was really good for me and challenged me in ways I couldn’t have predicted.
+My first thought upon realizing this was “what have I been doing this year?” And my second thought was“actually, a lot!”Not all of it was what I expected or had planned, but most of it was really good for me and challenged me in ways I couldn’t have predicted.
 
 So, I wanted to sit down and take a moment to reflect and share the main lessons I’ve been learning (and am frankly still working on) this year.
 
-The more you know, the more you don’t (and that’s ok)
+## The more you know, the more you don’t (and that’s ok)
 
 If I had to distill the last year professionally into two sentences it would be this: the more I learned, the more I realized I didn’t know. And at the same time, I also realized I was more capable than I’d given myself credit for.
 
@@ -29,7 +28,7 @@ Stepping into a new role opened up an entirely new set of problems I hadn’t fu
 
 I think this is part of why I didn’t write as much in 2025. When you learn something genuinely hard and new that’s changing so quickly, it can be challenging to find the right words to explain what you’re learning, why it matters, and feel confident in doing so.
 
-Get comfortable with an unprecedented rate of change
+## Get comfortable with an unprecedented rate of change
 
 AI advancements have only accelerated over the last year, we’ve seen huge jumps in model capability, the rise of coding agents and vibe coding, and increasingly sophisticated agent harnesses. While all of these advancements are incredibly exciting, it’s also impossible to keep up with all of them, and you will go crazy trying.
 
@@ -37,7 +36,7 @@ As AI adoption and capability continue to accelerate, I think it’s even more i
 
 My practical takeaway: find the things you are genuinely curious about and don’t give them up. The rest can wait. The internet is full of noise when it comes to AI, which makes it even more important to spend time personally exploring and building your own intuition on how to work with it effectively. There will always be more to learn, and you will probably surprise yourself with just how much you can accomplish.
 
-Learn to be a communication chameleon
+## Learn to be a communication chameleon
 
 If there’s one skill I’ve been unexpectedly humbled by this year, it’s communication.
 
@@ -45,7 +44,7 @@ I always thought I was pretty good at articulating my thoughts and feedback, but
 
 For me, I realized how comfortable I am with conflict and directness in my personal life, but howuncomfortable it still makes me feel professionally. This is definitely a skill I am still working on, but am proud of how far I’ve come. I think it’s easy to hesitate to be direct because you don’t want to come off as rude or insensitive, but the reality is you can be direct while still being respectful. And if you are unclear, at the end of the day you’ll be the one stuck with the problem until you find a way to communicate it clearly so that others can understand and you can all move forward.
 
-When you’re stuck, just walk the dog
+## When you’re stuck, just walk the dog
 
 There is a particular kind of frustration that I think anyone working in AI knows well. You find a tutorial, a solution, a new framework or skill that looks like it can be implemented in the next 15 minutes. Three hours later, you’re more confused than when you started, and instead of celebrating this successful implementation, you are closer to throwing your laptop out the window.
 
@@ -53,7 +52,7 @@ Portia, my two-year-old German Shepherd, has been a very welcome antidote to thi
 
 Every time I’ve closed my laptop, gone outside, and just moved, my problem either solved itself, became less complicated, or revealed itself as not a problem worth solving. Sometimes the best thing you can do is abandon your screen and just go walk the dog. You’ll both thank you when you get home.
 
-At the end of the day, your village is everything
+## At the end of the day, your village is everything
 
 In the age of AI I think sometimes people are quick to negate how valuable human connection is, but if there is anything I’ve learned in the last year it’s how important having your village is.
 
@@ -61,7 +60,7 @@ AI is extraordinary and can do so much, but it will never be the voice at the en
 
 On a very happy personal note, I got engaged at the end of last year and am getting married this summer! In a year that felt turbulent in a lot of ways, it made me more and more grateful to have found my person and be blessed to be with someone who shows up consistently and believes in me even when it’s hard to do that for myself.
 
-Be careful what you ask for, and embrace what you get
+## Be careful what you ask for, and embrace what you get
 
 I’ve always been someone who enjoys a challenge and wants to grow. I love learning. I love working in a field where I get to experiment with new technology everyday. I love swimming and pushing outside my comfort zone by competing in events like the Catalina Channel crossing (where you swim across the ocean in the middle of the night!). I am not afraid of being uncomfortable.
 
@@ -71,7 +70,7 @@ And the universe, with its incredible sense of humor, saidgreat, we’ve got jus
 
 This year I remembered why we use the term “growing pains”. I don’t think life gives us more than we can handle, but I do think sometimes we ask for growth and when it actually shows up in all of its uncomfortable, inconvenient, this-is-not-how-I-planned it glory, we look at it and go wait, I didn’t mean I want to grow LIKE THIS! And that’s ok. Sometimes you need to get a little beat up and sit in the dirt for a bit. You will come out the other side and be better for it. But at the same time it’s ok to call a friend, (or walk the dog), and give yourself a breather before you get back up. But you need to keep getting up.
 
-Can I be a real person on the internet?
+## Can I be a real person on the internet?
 
 This is one question I keep asking myself. I think the answer is yes, but doing so can be intimidating.
 
