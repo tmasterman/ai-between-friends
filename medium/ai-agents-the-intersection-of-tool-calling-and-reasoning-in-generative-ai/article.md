@@ -12,18 +12,18 @@ published: 2024-10-05
 original_url: "https://towardsdatascience.com/ai-agents-the-intersection-of-tool-calling-and-reasoning-in-generative-ai-ff268eece443/"
 license: "CC BY-NC 4.0"
 ---
-
-Unpacking problem solving and tool-driven decision making in AI
+# AI Agents: The Intersection of Tool Calling and Reasoning in Generative AI
+### Unpacking problem solving and tool-driven decision making in AI
 
 Image by Author and GPT-4o depicting an AI agent at the intersection of reasoning and tool calling
 
-Introduction: The Rise of Agentic AI
+## Introduction: The Rise of Agentic AI
 
 Today, new libraries and low-code platforms are making it easier than ever to build AI agents, also referred to as digital workers. Tool calling is one of the primary abilities driving the “agentic” nature of Generative AI models by extending their ability beyond conversational tasks. By executing tools (functions), agents can take action on your behalf and solve complex, multi-step problems that require robust decision making and interacting with a variety of external data sources.
 
 This article focuses on how reasoning is expressed through tool calling, explores some of the challenges of tool use, covers common ways to evaluate tool-calling ability, and provides examples of how different models and agents interact with tools.
 
-Expressions of Reasoning to Solve Problems
+## Expressions of Reasoning to Solve Problems
 
 At the core of successful agents lie two key expressions of reasoning:reasoning through evaluation and planningandreasoning through tool use.
 
@@ -33,11 +33,11 @@ At the core of successful agents lie two key expressions of reasoning:reasoning 
 
 While both expressions of reasoning are important, they don’t always need to be combined to create powerful solutions. For example,OpenAI’s newo1 model excels at reasoning through evaluation and planningbecause it was trained to reason using chain of thought. This has significantly improved its ability to think through and solve complex challenges as reflected on a variety of benchmarks. For example, the o1 model has been shown tosurpass human PhD-level accuracy on the GPQA benchmarkcovering physics, biology, and chemistry, and scored in the86th-93rd percentile on Codeforcescontests. While o1’s reasoning ability could be used to generate text-based responses that suggest tools based on their descriptions, it currently lacks explicit tool calling abilities (at least for now!).
 
-In contrast,many models are fine-tuned specifically for reasoning through tool useenabling them to generate function calls and interact with APIs very effectively. These models are focused on calling the right tool in the right format at the right time, but are typically not designed to evaluate their own results as thoroughly as o1 might. TheBerkeley Function Calling Leaderboard(BFCL) is a great resource for comparing how different models perform on function calling tasks. It also provides anevaluation suite to compare your own fine-tuned modelon various challenging tool calling tasks. In fact, thelatest dataset, BFCL v3, was just released and now includesmulti-step, multi-turn function calling, further raising the bar for tool based reasoning tasks.
+In contrast, many models are fine-tuned specifically for reasoning through tool useenabling them to generate function calls and interact with APIs very effectively. These models are focused on calling the right tool in the right format at the right time, but are typically not designed to evaluate their own results as thoroughly as o1 might. TheBerkeley Function Calling Leaderboard(BFCL) is a great resource for comparing how different models perform on function calling tasks. It also provides anevaluation suite to compare your own fine-tuned modelon various challenging tool calling tasks. In fact, thelatest dataset, BFCL v3, was just released and now includesmulti-step, multi-turn function calling, further raising the bar for tool based reasoning tasks.
 
 Both types of reasoning are powerful independently, and when combined, they have the potential to create agents that can effectively breakdown complicated tasks and autonomously interact with their environment. For more examples of AI agent architectures for reasoning, planning, and tool callingcheck out my team’s survey paper on ArXiv.
 
-Challenges with Tool-Calling: Navigating Complex Agent Behaviors
+## Challenges with Tool-Calling: Navigating Complex Agent Behaviors
 
 Building robust and reliable agents requires overcoming many different challenges. When solving complex problems, an agent often needs to balance multiple tasks at once including planning, interacting with the right tools at the right time, formatting tool calls properly, remembering outputs from previous steps, avoiding repetitive loops, and adhering to guidance to protect the system from jailbreaks/prompt injections/etc.
 
@@ -53,7 +53,7 @@ Some of the key considerations when fine-tuning a model for tool calling include
 
 - Ensuring Dataset Diversity and Robust Evaluations: The dataset used should be diverse and cover the complexity of multi-step, multi-turn function calling. Proper evaluations should be performed to prevent overfitting and avoid benchmark contamination.
 
-Common Benchmarks to Evaluate Tool-Calling
+## Common Benchmarks to Evaluate Tool-Calling
 
 With the growing importance of tool use in language models, many datasets have emerged to help evaluate and improve model tool-calling capabilities. Two of the most popular benchmarks today are the Berkeley Function Calling Leaderboard and Nexus Function Calling Benchmark, both of whichMeta used to evaluate the performance of their Llama 3.1 model series. A recent paper,ToolACE, demonstrates how agents can be used to create a diverse dataset for fine-tuning and evaluating model tool use.
 
@@ -67,7 +67,7 @@ Let’s explore each of these benchmarks in more detail:
 
 Each of these benchmarks facilitates our ability to evaluate model reasoning expressed through tool calling. These benchmarks and fine-tuned models reflect a growing trend towards developing more specialized models for specific tasks and increasing LLM capabilities by extending their ability to interact with the real-world.
 
-Examples of Tool-Calling in Action
+## Examples of Tool-Calling in Action
 
 If you’re interested in exploring tool-calling in action, here are some examples to get you started organized by ease of use, ranging from simple built-in tools to using fine-tuned models, and agents with tool-calling abilities.
 
@@ -92,7 +92,7 @@ This approach to using the Databricks Playground allows you to observe how the m
 Outside of the Databricks Playground, we can observe and evaluate how effectively different models available on platforms like HuggingFace use tools through code directly. For example, we can load different models like Llama 3.2–3B-Instruct, ToolACE-8B, NexusRaven-V2–13B, and more from HuggingFace, give them the same system prompt, tools, and user message then observe and compare the tool calls each model returns. This is a great way to understand how well different models reason about using custom-defined tools and can help you determine which tool-calling models are best suited for your applications.
 
 Here is an example demonstrating a tool call generated by Llama-3.2–3B-Instruct based on the following tool definitions and user message, the same steps could be followed for other models to compare generated tool calls.
-
+```
 import torch
 from transformers import pipeline
 
@@ -156,7 +156,10 @@ also point it out. You should only return the function call in tools call sectio
 If you decide to invoke any of the function(s), you MUST put it in the format of [func_name1(params_name1=params_value1, params_name2=params_value2...), func_name2(params)]\n
 You SHOULD NOT include any other text in the response.
 
-Here is a list of functions in JSON format that you can invoke.\n\n{functions}\n""".format(functions=function_definitions)Image by author sample output demonstrating generated tool call from Llama 3.2–3B-Instruct
+Here is a list of functions in JSON format that you can invoke.\n\n{functions}\n""".format(functions=function_definitions)
+```
+
+Image by author sample output demonstrating generated tool call from Llama 3.2–3B-Instruct
 
 From here we can move to Level 3 where we’re defining Agents that execute the tool-calls generated by the language model.
 
@@ -172,12 +175,12 @@ Check out these guides for some exciting examples of agents in action:
 
 - LlamaIndex:Agent Usage Pattern Documentation
 
-Conclusion:
+## Conclusion:
 
 The future of agentic systems will be driven by models with strong reasoning abilities enabling them to effectively interact with their environment. As the field evolves, I expect we will continue to see a proliferation of smaller, specialized models focused on specific tasks like tool-calling and planning.
 
 It’s important to consider the current limitations of model sizes when building agents. For example, according to theLlama 3.1 model card, the Llama 3.1–8B model is not reliable for tasks that involve both maintaining a conversation and calling tools. Instead, larger models with 70B+ parameters should be used for these types of tasks. This alongside other emerging research for fine-tuning small language models suggests that smaller models may serve best as specialized tool-callers while larger models may be better for more advanced reasoning. By combining these abilities, we can build increasingly effective agents that provide a seamless user experience and allow people to leverage these reasoning abilities in both professional and personal endeavors.
 
-Interested in discussing further or collaborating? Reach out onLinkedIn!
+Interested in discussing further or collaborating? Reach out on LinkedIn!
 
-AI Agents: The Intersection of Tool Calling and Reasoning in Generative AIwas originally published inTDS Archiveon Medium, where people are continuing the conversation by highlighting and responding to this story.
+AI Agents: The Intersection of Tool Calling and Reasoning in Generative AIwas originally published in TDS Archive on Medium, where people are continuing the conversation by highlighting and responding to this story.
