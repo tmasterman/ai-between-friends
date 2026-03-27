@@ -12,9 +12,6 @@ published: 2024-10-05
 original_url: "https://towardsdatascience.com/ai-agents-the-intersection-of-tool-calling-and-reasoning-in-generative-ai-ff268eece443/"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-Explores how reasoning is expressed through tool calling, challenges of tool use, ways to evaluate tool-calling ability, and examples of how different models and agents interact with tools.
 
 ## Article
 

@@ -12,11 +12,6 @@ published: 2025-03-05
 original_url: "https://towardsdatascience.com/overcome-failing-document-ingestion-rag-strategies-with-agentic-knowledge-distillation/"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-Introduces an agentic knowledge distillation and pyramid search approach for improving document ingestion, retrieval, and complex cross-document reasoning in RAG systems.
-
-## ## Introduction
 
 ## Article
 

@@ -12,9 +12,6 @@ published: 2024-12-20
 original_url: "https://medium.com/data-science/introducing-layer-enhanced-classification-lec-4972f4f1c79f"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-Summarizes goals, approach, results, and implications of Layer Enhanced Classification for lightweight safety and prompt-injection classification using pruned language models.
 
 ## Article
 

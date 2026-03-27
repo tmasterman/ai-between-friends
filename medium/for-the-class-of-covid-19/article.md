@@ -12,9 +12,6 @@ published: 2020-03-19
 original_url: "https://medium.com/@tula.masterman/for-the-class-of-covid-19-f31607e66fb0"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-Earlier reflective piece.
 
 ## Article
 

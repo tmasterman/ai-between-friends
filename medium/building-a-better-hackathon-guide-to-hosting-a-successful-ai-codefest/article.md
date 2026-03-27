@@ -12,9 +12,6 @@ published: 2024-04-29
 original_url: "https://medium.com/neudesic-innovation/building-a-better-hackathon-guide-to-hosting-a-successful-ai-codefest-2530e5d12773"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-A practical framework for organizing AI hackathons that are educational, inclusive, and impactful.
 
 ## Article
 

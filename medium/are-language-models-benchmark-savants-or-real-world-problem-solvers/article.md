@@ -12,9 +12,6 @@ published: 2024-03-23
 original_url: "https://medium.com/data-science/are-language-models-benchmark-savants-or-real-world-problem-solvers-725a7e1524e1"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-Argues that language model evaluation needs to move beyond static benchmarks toward dynamic, multimodal, real-world assessments.
 
 ## Article
 

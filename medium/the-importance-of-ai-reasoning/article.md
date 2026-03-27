@@ -12,9 +12,6 @@ published: 2024-02-28
 original_url: "https://medium.com/neudesic-innovation/the-importance-of-ai-reasoning-4ed7bcbed725"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-Explains why reasoning is critical for AI systems that need to plan, adapt, and execute meaningful actions on behalf of users.
 
 ## Article
 

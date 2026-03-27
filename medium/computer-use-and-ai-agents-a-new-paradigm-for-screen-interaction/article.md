@@ -12,9 +12,6 @@ published: 2024-10-30
 original_url: "https://medium.com/data-science/computer-use-and-ai-agents-a-new-paradigm-for-screen-interaction-b2dcbea0df5b"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-Explores multimodal AI agents, computer-use interfaces, and how screen interaction changes what effective agents require.
 
 ## Article
 

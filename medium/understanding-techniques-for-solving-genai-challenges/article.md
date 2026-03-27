@@ -12,9 +12,6 @@ published: 2024-06-20
 original_url: "https://medium.com/data-science/understanding-techniques-for-solving-genai-challenges-83a7ad4650bd"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-Explains when and how to use pre-training, continued pre-training, fine-tuning, RAG, embedding tuning, and prompt engineering to solve GenAI problems.
 
 ## Article
 

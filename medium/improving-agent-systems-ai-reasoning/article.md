@@ -12,9 +12,6 @@ published: 2025-02-02
 original_url: "https://medium.com/data-science/improving-agent-systems-ai-reasoning-c2d91ecfdf77"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-Deep dive into reasoning improvements, test-time compute, model post-training, and implications for building stronger agent systems.
 
 ## Article
 

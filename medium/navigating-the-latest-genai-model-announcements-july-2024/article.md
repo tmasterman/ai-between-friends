@@ -12,9 +12,6 @@ published: 2024-07-26
 original_url: "https://medium.com/data-science/navigating-the-latest-genai-model-announcements-july-2024-461f227f588f"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-A guide to mid-2024 model announcements and trends.
 
 ## Article
 

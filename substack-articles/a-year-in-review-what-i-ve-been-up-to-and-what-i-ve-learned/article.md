@@ -11,9 +11,6 @@ published: 2026-03-09
 original_url: "https://tulamasterman.substack.com/p/a-year-in-review-what-ive-been-up"
 license: "CC BY-NC 4.0"
 ---
-## Summary
-
-Reflections on growth, learning, communication, change, and returning to writing after a year of professional and personal transition.
 
 ## Article
 
