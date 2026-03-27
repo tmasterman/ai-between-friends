@@ -1,4 +1,4 @@
-# ai-betweeen-friends
+# ai-between-friends
 A public library of writing, examples, and source material from Tula Masterman, organized so both humans and AI systems can read, reference, and build from it.
 
 This repository is a home for published work and reusable artifacts, including Substack posts, Medium or TDS articles, notes, and shared examples, in a format that is easier to search, connect, and reuse over time.
